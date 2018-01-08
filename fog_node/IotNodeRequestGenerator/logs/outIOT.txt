@@ -1,0 +1,638 @@
+Listenning on localhost port 8000 for response...
+SENT: #:0 T:9 FL:4 IP:localhost P:8000
+SENT: #:1 T:2 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=9, PT=100, FL=4, 
+seq#: 0, path=[25], details=
+Visited 25; available PT: 1000; can process; Served by fog;]
+SENT: #:2 T:3 FL:4 IP:localhost P:8000
+SENT: #:3 T:2 FL:4 IP:localhost P:8000
+SENT: #:4 T:4 FL:4 IP:localhost P:8000
+SENT: #:5 T:7 FL:4 IP:localhost P:8000
+SENT: #:6 T:1 FL:4 IP:localhost P:8000
+SENT: #:7 T:5 FL:4 IP:localhost P:8000
+SENT: #:8 T:8 FL:4 IP:localhost P:8000
+SENT: #:9 T:10 FL:4 IP:localhost P:8000
+SENT: #:10 T:2 FL:4 IP:localhost P:8000
+SENT: #:11 T:1 FL:4 IP:localhost P:8000
+SENT: #:12 T:9 FL:4 IP:localhost P:8000
+SENT: #:13 T:5 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=2, PT=700, FL=4, 
+seq#: 1, path=[30], details=
+Visited 30; available PT: 1000; can process; Served by fog;]
+SENT: #:14 T:2 FL:4 IP:localhost P:8000
+SENT: #:15 T:10 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=2, PT=700, FL=4, 
+seq#: 3, path=[20], details=
+Visited 20; available PT: 1000; can process; Served by fog;]
+SENT: #:16 T:5 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=3, PT=800, FL=4, 
+seq#: 2, path=[15], details=
+Visited 15; available PT: 1000; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=1, PT=600, FL=4, 
+seq#: 6, path=[25], details=
+Visited 25; available PT: 1000; can process; Served by fog;]
+SENT: #:17 T:5 FL:4 IP:localhost P:8000
+SENT: #:18 T:4 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=9, PT=100, FL=4, 
+seq#: 12, path=[25], details=
+Visited 25; available PT: 400; can process; Served by fog;]
+SENT: #:19 T:10 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=5, PT=650, FL=4, 
+seq#: 7, path=[30, 25], details=
+Visited 30; available PT: 300; cannot process; FL: 0; neigh PQ: [25:0, 20:700, 40:850, 15:800]; offload to: 25; 
+Visited 25; available PT: 400; cannot process; FL: 1; neigh PQ: [30:700]; 30 visited; all neighbors visited; Served by cloud;]
+
+RECEIVED: Packet [id=localhost:8000, T=10, PT=200, FL=4, 
+seq#: 9, path=[20], details=
+Visited 20; available PT: 300; can process; Served by fog;]
+SENT: #:20 T:3 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=4, PT=900, FL=4, 
+seq#: 4, path=[35], details=
+Visited 35; available PT: 1000; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=7, PT=850, FL=4, 
+seq#: 5, path=[40], details=
+Visited 40; available PT: 1000; can process; Served by fog;]
+SENT: #:21 T:2 FL:4 IP:localhost P:8000
+SENT: #:22 T:1 FL:4 IP:localhost P:8000
+SENT: #:23 T:3 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=10, PT=200, FL=4, 
+seq#: 19, path=[30, 15, 35, 40, 20], details=
+Visited 30; available PT: 100; cannot process; FL: 0; neigh PQ: [15:0, 25:750, 20:850, 40:850]; offload to: 15; 
+Visited 15; available PT: 100; cannot process; FL: 1; neigh PQ: [30:900, 35:900]; 30 visited; offload to: 35; 
+Visited 35; available PT: 100; cannot process; FL: 2; neigh PQ: [15:0, 40:850]; 15 visited; offload to: 40; 
+Visited 40; available PT: 150; cannot process; FL: 3; neigh PQ: [20:850, 30:900, 35:900]; offload to: 20; 
+Visited 20; available PT: 150; cannot process; FL reached; Served by cloud;]
+SENT: #:24 T:4 FL:4 IP:localhost P:8000
+SENT: #:25 T:2 FL:4 IP:localhost P:8000
+SENT: #:26 T:3 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=2, PT=700, FL=4, 
+seq#: 14, path=[15, 30], details=
+Visited 15; available PT: 200; cannot process; FL: 0; neigh PQ: [30:700, 35:900]; offload to: 30; 
+Visited 30; available PT: 1000; can process; Served by fog;]
+SENT: #:27 T:6 FL:4 IP:localhost P:8000
+SENT: #:28 T:10 FL:4 IP:localhost P:8000
+SENT: #:29 T:6 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=5, PT=650, FL=4, 
+seq#: 17, path=[40, 20, 30, 25], details=
+Visited 40; available PT: 150; cannot process; FL: 0; neigh PQ: [20:200, 35:900, 30:700]; offload to: 20; 
+Visited 20; available PT: 150; cannot process; FL: 1; neigh PQ: [30:700, 40:850]; offload to: 30; 
+Visited 30; available PT: 100; cannot process; FL: 2; neigh PQ: [20:200, 25:700, 15:800, 40:850]; 20 visited; offload to: 25; 
+Visited 25; available PT: 900; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=10, PT=200, FL=4, 
+seq#: 15, path=[20, 30], details=
+Visited 20; available PT: 100; cannot process; FL: 0; neigh PQ: [30:0, 40:850]; offload to: 30; 
+Visited 30; available PT: 300; can process; Served by fog;]
+SENT: #:30 T:6 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=5, PT=650, FL=4, 
+seq#: 16, path=[35, 15, 30, 20], details=
+Visited 35; available PT: 100; cannot process; FL: 0; neigh PQ: [15:800, 40:850]; offload to: 15; 
+Visited 15; available PT: 200; cannot process; FL: 1; neigh PQ: [30:700, 35:900]; offload to: 30; 
+Visited 30; available PT: 100; cannot process; FL: 2; neigh PQ: [20:200, 25:700, 40:850, 15:800]; offload to: 20; 
+Visited 20; available PT: 800; can process; Served by fog;]
+SENT: #:31 T:7 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=1, PT=600, FL=4, 
+seq#: 22, path=[35], details=
+Visited 35; available PT: 1000; can process; Served by fog;]
+SENT: #:32 T:1 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=2, PT=700, FL=4, 
+seq#: 21, path=[20, 40], details=
+Visited 20; available PT: 350; cannot process; FL: 0; neigh PQ: [40:0, 30:900]; offload to: 40; 
+Visited 40; available PT: 1000; can process; Served by fog;]
+SENT: #:33 T:10 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=4, PT=900, FL=4, 
+seq#: 18, path=[25, 30, 15], details=
+Visited 25; available PT: 250; cannot process; FL: 0; neigh PQ: [30:900]; offload to: 30; 
+Visited 30; available PT: 100; cannot process; FL: 1; neigh PQ: [15:0, 25:700, 40:850, 20:850]; offload to: 15; 
+Visited 15; available PT: 1000; can process; Served by fog;]
+SENT: #:34 T:10 FL:4 IP:localhost P:8000
+SENT: #:35 T:8 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=10, PT=200, FL=4, 
+seq#: 28, path=[35], details=
+Visited 35; available PT: 400; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=8, PT=950, FL=4, 
+seq#: 8, path=[15, 30, 25], details=
+Visited 15; available PT: 200; cannot process; FL: 0; neigh PQ: [30:700, 35:900]; offload to: 30; 
+Visited 30; available PT: 300; cannot process; FL: 1; neigh PQ: [25:600, 20:700, 15:800, 40:850]; offload to: 25; 
+Visited 25; available PT: 400; cannot process; FL: 2; neigh PQ: [30:700]; 30 visited; all neighbors visited; Served by cloud;]
+SENT: #:36 T:10 FL:4 IP:localhost P:8000
+SENT: #:37 T:4 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=3, PT=800, FL=4, 
+seq#: 23, path=[40, 35, 15, 30, 20], details=
+Visited 40; available PT: 300; cannot process; FL: 0; neigh PQ: [35:600, 20:650, 30:900]; offload to: 35; 
+Visited 35; available PT: 400; cannot process; FL: 1; neigh PQ: [40:700, 15:900]; 40 visited; offload to: 15; 
+Visited 15; available PT: 100; cannot process; FL: 2; neigh PQ: [35:600, 30:900]; 35 visited; offload to: 30; 
+Visited 30; available PT: 100; cannot process; FL: 3; neigh PQ: [20:650, 40:700, 15:900, 25:800]; offload to: 20; 
+Visited 20; available PT: 350; cannot process; FL reached; Served by cloud;]
+SENT: #:38 T:10 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=2, PT=700, FL=4, 
+seq#: 25, path=[30, 20, 40, 35, 15], details=
+Visited 30; available PT: 100; cannot process; FL: 0; neigh PQ: [20:450, 40:700, 25:800, 15:900]; offload to: 20; 
+Visited 20; available PT: 550; cannot process; FL: 1; neigh PQ: [40:700, 30:900]; offload to: 40; 
+Visited 40; available PT: 300; cannot process; FL: 2; neigh PQ: [20:450, 30:900, 35:600]; 20 visited; offload to: 35; 
+Visited 35; available PT: 400; cannot process; FL: 3; neigh PQ: [40:700, 15:900]; 40 visited; offload to: 15; 
+Visited 15; available PT: 100; cannot process; FL reached; Served by cloud;]
+SENT: #:39 T:8 FL:4 IP:localhost P:8000
+SENT: #:40 T:9 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=4, PT=900, FL=4, 
+seq#: 24, path=[25, 30, 20, 40, 35], details=
+Visited 25; available PT: 200; cannot process; FL: 0; neigh PQ: [30:900]; offload to: 30; 
+Visited 30; available PT: 100; cannot process; FL: 1; neigh PQ: [20:450, 40:700, 25:800, 15:900]; offload to: 20; 
+Visited 20; available PT: 550; cannot process; FL: 2; neigh PQ: [40:700, 30:900]; offload to: 40; 
+Visited 40; available PT: 300; cannot process; FL: 3; neigh PQ: [20:450, 30:900, 35:600]; 20 visited; offload to: 35; 
+Visited 35; available PT: 400; cannot process; FL reached; Served by cloud;]
+SENT: #:41 T:2 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=6, PT=750, FL=4, 
+seq#: 27, path=[20, 40, 35, 15, 30], details=
+Visited 20; available PT: 550; cannot process; FL: 0; neigh PQ: [40:700, 30:900]; offload to: 40; 
+Visited 40; available PT: 300; cannot process; FL: 1; neigh PQ: [20:450, 30:900, 35:600]; 20 visited; offload to: 35; 
+Visited 35; available PT: 400; cannot process; FL: 2; neigh PQ: [40:700, 15:900]; 40 visited; offload to: 15; 
+Visited 15; available PT: 100; cannot process; FL: 3; neigh PQ: [35:600, 30:900]; 35 visited; offload to: 30; 
+Visited 30; available PT: 0; cannot process; FL reached; Served by cloud;]
+SENT: #:42 T:9 FL:4 IP:localhost P:8000
+SENT: #:43 T:6 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=3, PT=800, FL=4, 
+seq#: 20, path=[15, 30, 25], details=
+Visited 15; available PT: 100; cannot process; FL: 0; neigh PQ: [30:900, 35:900]; offload to: 30; 
+Visited 30; available PT: 100; cannot process; FL: 1; neigh PQ: [25:750, 20:850, 15:900, 40:850]; offload to: 25; 
+Visited 25; available PT: 1000; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=3, PT=800, FL=4, 
+seq#: 26, path=[15, 35, 40, 20, 30], details=
+Visited 15; available PT: 100; cannot process; FL: 0; neigh PQ: [35:600, 30:900]; offload to: 35; 
+Visited 35; available PT: 400; cannot process; FL: 1; neigh PQ: [40:700, 15:900]; offload to: 40; 
+Visited 40; available PT: 300; cannot process; FL: 2; neigh PQ: [20:450, 35:600, 30:900]; offload to: 20; 
+Visited 20; available PT: 550; cannot process; FL: 3; neigh PQ: [40:700, 30:900]; 40 visited; offload to: 30; 
+Visited 30; available PT: 800; can process; Served by fog;]
+SENT: #:44 T:1 FL:4 IP:localhost P:8000
+SENT: #:45 T:5 FL:4 IP:localhost P:8000
+SENT: #:46 T:2 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=7, PT=850, FL=4, 
+seq#: 31, path=[30, 20], details=
+Visited 30; available PT: 200; cannot process; FL: 0; neigh PQ: [20:450, 40:700, 25:800, 15:900]; offload to: 20; 
+Visited 20; available PT: 1200; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=1, PT=600, FL=4, 
+seq#: 32, path=[15, 30, 20, 40, 35], details=
+Visited 15; available PT: 100; cannot process; FL: 0; neigh PQ: [30:800, 35:800]; offload to: 30; 
+Visited 30; available PT: 200; cannot process; FL: 1; neigh PQ: [20:450, 40:700, 25:900, 15:900]; offload to: 20; 
+Visited 20; available PT: 350; cannot process; FL: 2; neigh PQ: [40:700, 30:800]; offload to: 40; 
+Visited 40; available PT: 300; cannot process; FL: 3; neigh PQ: [20:650, 35:800, 30:800]; 20 30 visited; offload to: 35; 
+Visited 35; available PT: 800; can process; Served by fog;]
+SENT: #:47 T:6 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=10, PT=200, FL=4, 
+seq#: 38, path=[15, 30], details=
+Visited 15; available PT: 100; cannot process; FL: 0; neigh PQ: [30:800, 35:800]; offload to: 30; 
+Visited 30; available PT: 200; can process; Served by fog;]
+SENT: #:48 T:1 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=2, PT=700, FL=4, 
+seq#: 10, path=[35, 15, 30, 25], details=
+Visited 35; available PT: 100; cannot process; FL: 0; neigh PQ: [15:800, 40:850]; offload to: 15; 
+Visited 15; available PT: 200; cannot process; FL: 1; neigh PQ: [30:700, 35:900]; offload to: 30; 
+Visited 30; available PT: 300; cannot process; FL: 2; neigh PQ: [25:600, 20:700, 40:850, 15:800]; offload to: 25; 
+Visited 25; available PT: 400; cannot process; FL: 3; neigh PQ: [30:700]; 30 visited; all neighbors visited; Served by cloud;]
+SENT: #:49 T:6 FL:4 IP:localhost P:8000
+SENT: #:50 T:5 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=10, PT=200, FL=4, 
+seq#: 33, path=[20], details=
+Visited 20; available PT: 350; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=10, PT=200, FL=4, 
+seq#: 34, path=[35], details=
+Visited 35; available PT: 200; can process; Served by fog;]
+SENT: #:51 T:3 FL:4 IP:localhost P:8000
+SENT: #:52 T:1 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=9, PT=100, FL=4, 
+seq#: 40, path=[35], details=
+Visited 35; available PT: 200; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=8, PT=950, FL=4, 
+seq#: 35, path=[40], details=
+Visited 40; available PT: 1000; can process; Served by fog;]
+SENT: #:53 T:4 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=4, PT=900, FL=4, 
+seq#: 37, path=[30, 15], details=
+Visited 30; available PT: 200; cannot process; FL: 0; neigh PQ: [15:0, 25:150, 40:950, 20:850]; offload to: 15; 
+Visited 15; available PT: 1000; can process; Served by fog;]
+SENT: #:54 T:8 FL:4 IP:localhost P:8000
+SENT: #:55 T:6 FL:4 IP:localhost P:8000
+SENT: #:56 T:4 FL:4 IP:localhost P:8000
+SENT: #:57 T:2 FL:4 IP:localhost P:8000
+SENT: #:58 T:9 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=6, PT=750, FL=4, 
+seq#: 30, path=[25], details=
+Visited 25; available PT: 850; can process; Served by fog;]
+SENT: #:59 T:3 FL:4 IP:localhost P:8000
+SENT: #:60 T:2 FL:4 IP:localhost P:8000
+SENT: #:61 T:9 FL:4 IP:localhost P:8000
+SENT: #:62 T:4 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=10, PT=200, FL=4, 
+seq#: 36, path=[25], details=
+Visited 25; available PT: 1050; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=6, PT=750, FL=4, 
+seq#: 43, path=[30], details=
+Visited 30; available PT: 750; can process; Served by fog;]
+SENT: #:63 T:2 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=9, PT=100, FL=4, 
+seq#: 42, path=[25], details=
+Visited 25; available PT: 850; can process; Served by fog;]
+SENT: #:64 T:2 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=1, PT=600, FL=4, 
+seq#: 44, path=[15], details=
+Visited 15; available PT: 800; can process; Served by fog;]
+SENT: #:65 T:6 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=1, PT=900, FL=4, 
+seq#: 11, path=[40, 30, 25], details=
+Visited 40; available PT: 150; cannot process; FL: 0; neigh PQ: [30:700, 20:900, 35:900]; offload to: 30; 
+Visited 30; available PT: 300; cannot process; FL: 1; neigh PQ: [25:600, 15:800, 40:850, 20:900]; offload to: 25; 
+Visited 25; available PT: 400; cannot process; FL: 2; neigh PQ: [30:700]; 30 visited; all neighbors visited; Served by cloud;]
+
+RECEIVED: Packet [id=localhost:8000, T=2, PT=700, FL=4, 
+seq#: 41, path=[40, 35], details=
+Visited 40; available PT: 50; cannot process; FL: 0; neigh PQ: [35:0, 20:1000, 30:1000]; offload to: 35; 
+Visited 35; available PT: 1000; can process; Served by fog;]
+SENT: #:66 T:1 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=3, PT=800, FL=4, 
+seq#: 51, path=[20, 30, 15, 35, 40], details=
+Visited 20; available PT: 300; cannot process; FL: 0; neigh PQ: [30:650, 40:950]; offload to: 30; 
+Visited 30; available PT: 350; cannot process; FL: 1; neigh PQ: [20:700, 15:800, 40:950, 25:800]; 20 visited; offload to: 15; 
+Visited 15; available PT: 200; cannot process; FL: 2; neigh PQ: [35:100, 30:650]; offload to: 35; 
+Visited 35; available PT: 450; cannot process; FL: 3; neigh PQ: [15:800, 40:950]; 15 visited; offload to: 40; 
+Visited 40; available PT: 50; cannot process; FL reached; Served by cloud;]
+SENT: #:67 T:7 FL:4 IP:localhost P:8000
+SENT: #:68 T:8 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=8, PT=950, FL=4, 
+seq#: 39, path=[20], details=
+Visited 20; available PT: 950; can process; Served by fog;]
+SENT: #:69 T:2 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=6, PT=750, FL=4, 
+seq#: 55, path=[30, 15, 35, 40, 20], details=
+Visited 30; available PT: 350; cannot process; FL: 0; neigh PQ: [15:-100, 20:700, 25:800, 40:900]; offload to: 15; 
+Visited 15; available PT: 150; cannot process; FL: 1; neigh PQ: [35:450, 30:650]; offload to: 35; 
+Visited 35; available PT: 550; cannot process; FL: 2; neigh PQ: [15:-100, 40:900]; 15 visited; offload to: 40; 
+Visited 40; available PT: 100; cannot process; FL: 3; neigh PQ: [35:450, 20:700, 30:650]; 35 30 visited; offload to: 20; 
+Visited 20; available PT: 300; cannot process; FL reached; Served by cloud;]
+SENT: #:70 T:9 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=4, PT=900, FL=4, 
+seq#: 53, path=[40], details=
+Visited 40; available PT: 1000; can process; Served by fog;]
+SENT: #:71 T:3 FL:4 IP:localhost P:8000
+SENT: #:72 T:8 FL:4 IP:localhost P:8000
+SENT: #:73 T:6 FL:4 IP:localhost P:8000
+SENT: #:74 T:10 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=5, PT=650, FL=4, 
+seq#: 45, path=[20, 30], details=
+Visited 20; available PT: 0; cannot process; FL: 0; neigh PQ: [30:200, 40:950]; offload to: 30; 
+Visited 30; available PT: 800; can process; Served by fog;]
+SENT: #:75 T:1 FL:4 IP:localhost P:8000
+SENT: #:76 T:6 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=9, PT=100, FL=4, 
+seq#: 61, path=[30], details=
+Visited 30; available PT: 350; can process; Served by fog;]
+SENT: #:77 T:4 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=2, PT=700, FL=4, 
+seq#: 46, path=[35, 15, 30, 25], details=
+Visited 35; available PT: 300; cannot process; FL: 0; neigh PQ: [15:800, 40:950]; offload to: 15; 
+Visited 15; available PT: 200; cannot process; FL: 1; neigh PQ: [35:700, 30:850]; 35 visited; offload to: 30; 
+Visited 30; available PT: 150; cannot process; FL: 2; neigh PQ: [25:-550, 15:800, 40:950, 20:1000]; offload to: 25; 
+Visited 25; available PT: 1550; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=5, PT=650, FL=4, 
+seq#: 13, path=[30, 25], details=
+Visited 30; available PT: 300; cannot process; FL: 0; neigh PQ: [25:600, 15:800, 20:900, 40:850]; offload to: 25; 
+Visited 25; available PT: 300; cannot process; FL: 1; neigh PQ: [30:700]; 30 visited; all neighbors visited; Served by cloud;]
+SENT: #:78 T:3 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=1, PT=600, FL=4, 
+seq#: 52, path=[35, 15, 30, 20, 40], details=
+Visited 35; available PT: 450; cannot process; FL: 0; neigh PQ: [15:800, 40:950]; offload to: 15; 
+Visited 15; available PT: 200; cannot process; FL: 1; neigh PQ: [35:550, 30:650]; 35 visited; offload to: 30; 
+Visited 30; available PT: 350; cannot process; FL: 2; neigh PQ: [20:700, 15:800, 40:950, 25:800]; offload to: 20; 
+Visited 20; available PT: 300; cannot process; FL: 3; neigh PQ: [30:650, 40:950]; 30 visited; offload to: 40; 
+Visited 40; available PT: 50; cannot process; FL reached; Served by cloud;]
+
+RECEIVED: Packet [id=localhost:8000, T=5, PT=650, FL=4, 
+seq#: 50, path=[15, 35], details=
+Visited 15; available PT: 200; cannot process; FL: 0; neigh PQ: [35:100, 30:650]; offload to: 35; 
+Visited 35; available PT: 900; can process; Served by fog;]
+SENT: #:79 T:5 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=4, PT=900, FL=4, 
+seq#: 62, path=[15, 35, 40, 20, 30], details=
+Visited 15; available PT: 150; cannot process; FL: 0; neigh PQ: [35:550, 30:750]; offload to: 35; 
+Visited 35; available PT: 450; cannot process; FL: 1; neigh PQ: [15:850, 40:900]; 15 visited; offload to: 40; 
+Visited 40; available PT: 100; cannot process; FL: 2; neigh PQ: [35:550, 20:700, 30:750]; 35 visited; offload to: 20; 
+Visited 20; available PT: 300; cannot process; FL: 3; neigh PQ: [30:750, 40:900]; offload to: 30; 
+Visited 30; available PT: 250; cannot process; FL reached; Served by cloud;]
+SENT: #:80 T:3 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=9, PT=100, FL=4, 
+seq#: 58, path=[35], details=
+Visited 35; available PT: 550; can process; Served by fog;]
+SENT: #:81 T:5 FL:4 IP:localhost P:8000
+SENT: #:82 T:9 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=6, PT=750, FL=4, 
+seq#: 47, path=[40, 20], details=
+Visited 40; available PT: 50; cannot process; FL: 0; neigh PQ: [20:150, 30:850, 35:700]; offload to: 20; 
+Visited 20; available PT: 850; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=8, PT=950, FL=4, 
+seq#: 54, path=[25, 30, 15], details=
+Visited 25; available PT: 200; cannot process; FL: 0; neigh PQ: [30:650]; offload to: 30; 
+Visited 30; available PT: 350; cannot process; FL: 1; neigh PQ: [15:-100, 40:0, 25:800, 20:700]; offload to: 15; 
+Visited 15; available PT: 1100; can process; Served by fog;]
+SENT: #:83 T:1 FL:4 IP:localhost P:8000
+SENT: #:84 T:8 FL:4 IP:localhost P:8000
+SENT: #:85 T:1 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=3, PT=800, FL=4, 
+seq#: 71, path=[40], details=
+Visited 40; available PT: 1800; can process; Served by fog;]
+SENT: #:86 T:2 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=4, PT=900, FL=4, 
+seq#: 56, path=[15, 35, 40, 30, 20], details=
+Visited 15; available PT: 150; cannot process; FL: 0; neigh PQ: [35:450, 30:650]; offload to: 35; 
+Visited 35; available PT: 550; cannot process; FL: 1; neigh PQ: [15:850, 40:900]; 15 visited; offload to: 40; 
+Visited 40; available PT: 100; cannot process; FL: 2; neigh PQ: [35:450, 20:700, 30:650]; 35 visited; offload to: 30; 
+Visited 30; available PT: 350; cannot process; FL: 3; neigh PQ: [20:700, 25:800, 40:900, 15:850]; offload to: 20; 
+Visited 20; available PT: 300; cannot process; FL reached; Served by cloud;]
+SENT: #:87 T:7 FL:4 IP:localhost P:8000
+SENT: #:88 T:8 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=1, PT=600, FL=4, 
+seq#: 48, path=[25], details=
+Visited 25; available PT: 850; can process; Served by fog;]
+SENT: #:89 T:9 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=2, PT=700, FL=4, 
+seq#: 63, path=[20, 30], details=
+Visited 20; available PT: 300; cannot process; FL: 0; neigh PQ: [30:750, 40:900]; offload to: 30; 
+Visited 30; available PT: 1000; can process; Served by fog;]
+SENT: #:90 T:1 FL:4 IP:localhost P:8000
+SENT: #:91 T:9 FL:4 IP:localhost P:8000
+SENT: #:92 T:6 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=6, PT=750, FL=4, 
+seq#: 29, path=[40, 20, 30, 25], details=
+Visited 40; available PT: 300; cannot process; FL: 0; neigh PQ: [20:450, 30:1000, 35:600]; offload to: 20; 
+Visited 20; available PT: 550; cannot process; FL: 1; neigh PQ: [40:700, 30:1000]; 40 visited; offload to: 30; 
+Visited 30; available PT: 0; cannot process; FL: 2; neigh PQ: [20:450, 40:700, 25:800, 15:900]; 20 40 visited; offload to: 25; 
+Visited 25; available PT: 200; cannot process; FL: 3; neigh PQ: [30:1000]; 30 visited; all neighbors visited; Served by cloud;]
+SENT: #:93 T:6 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=10, PT=200, FL=4, 
+seq#: 74, path=[15, 30], details=
+Visited 15; available PT: 0; cannot process; FL: 0; neigh PQ: [30:700, 35:900]; offload to: 30; 
+Visited 30; available PT: 300; can process; Served by fog;]
+SENT: #:94 T:9 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=4, PT=900, FL=4, 
+seq#: 77, path=[40, 20, 30, 15, 35], details=
+Visited 40; available PT: 250; cannot process; FL: 0; neigh PQ: [20:650, 35:900, 30:750]; offload to: 20; 
+Visited 20; available PT: 350; cannot process; FL: 1; neigh PQ: [30:750, 40:750]; offload to: 30; 
+Visited 30; available PT: 250; cannot process; FL: 2; neigh PQ: [20:650, 40:750, 25:1000, 15:1000]; 20 40 visited; offload to: 15; 
+Visited 15; available PT: 0; cannot process; FL: 3; neigh PQ: [30:850, 35:900]; 30 visited; offload to: 35; 
+Visited 35; available PT: 100; cannot process; FL reached; Served by cloud;]
+SENT: #:95 T:3 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=2, PT=700, FL=4, 
+seq#: 69, path=[20], details=
+Visited 20; available PT: 1250; can process; Served by fog;]
+SENT: #:96 T:9 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=6, PT=750, FL=4, 
+seq#: 65, path=[40, 35, 15], details=
+Visited 40; available PT: 100; cannot process; FL: 0; neigh PQ: [35:550, 30:700, 20:700]; offload to: 35; 
+Visited 35; available PT: 450; cannot process; FL: 1; neigh PQ: [15:850, 40:900]; offload to: 15; 
+Visited 15; available PT: 750; can process; Served by fog;]
+SENT: #:97 T:7 FL:4 IP:localhost P:8000
+SENT: #:98 T:8 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=8, PT=950, FL=4, 
+seq#: 68, path=[15, 35], details=
+Visited 15; available PT: 0; cannot process; FL: 0; neigh PQ: [35:-150, 30:700]; offload to: 35; 
+Visited 35; available PT: 1150; can process; Served by fog;]
+SENT: #:99 T:5 FL:4 IP:localhost P:8000
+
+RECEIVED: Packet [id=localhost:8000, T=6, PT=750, FL=4, 
+seq#: 73, path=[30, 20, 40], details=
+Visited 30; available PT: 300; cannot process; FL: 0; neigh PQ: [20:-300, 40:0, 15:1000, 25:1000]; offload to: 20; 
+Visited 20; available PT: 350; cannot process; FL: 1; neigh PQ: [40:0, 30:700]; offload to: 40; 
+Visited 40; available PT: 1000; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=9, PT=100, FL=4, 
+seq#: 70, path=[35], details=
+Visited 35; available PT: 200; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=3, PT=800, FL=4, 
+seq#: 59, path=[40, 35, 15, 30, 20], details=
+Visited 40; available PT: 100; cannot process; FL: 0; neigh PQ: [35:450, 30:650, 20:700]; offload to: 35; 
+Visited 35; available PT: 450; cannot process; FL: 1; neigh PQ: [15:850, 40:900]; offload to: 15; 
+Visited 15; available PT: 150; cannot process; FL: 2; neigh PQ: [35:550, 30:650]; 35 visited; offload to: 30; 
+Visited 30; available PT: 350; cannot process; FL: 3; neigh PQ: [20:700, 25:800, 15:850, 40:900]; offload to: 20; 
+Visited 20; available PT: 300; cannot process; FL reached; Served by cloud;]
+
+RECEIVED: Packet [id=localhost:8000, T=9, PT=100, FL=4, 
+seq#: 82, path=[35, 40], details=
+Visited 35; available PT: 50; cannot process; FL: 0; neigh PQ: [40:150, 15:1000]; offload to: 40; 
+Visited 40; available PT: 850; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=6, PT=750, FL=4, 
+seq#: 49, path=[30, 25], details=
+Visited 30; available PT: 350; cannot process; FL: 0; neigh PQ: [25:150, 20:900, 15:800, 40:950]; offload to: 25; 
+Visited 25; available PT: 950; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=1, PT=600, FL=4, 
+seq#: 75, path=[20, 30], details=
+Visited 20; available PT: 350; cannot process; FL: 0; neigh PQ: [30:250, 40:750]; offload to: 30; 
+Visited 30; available PT: 750; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=2, PT=700, FL=4, 
+seq#: 57, path=[20, 30, 25], details=
+Visited 20; available PT: 300; cannot process; FL: 0; neigh PQ: [30:650, 40:900]; offload to: 30; 
+Visited 30; available PT: 350; cannot process; FL: 1; neigh PQ: [20:700, 25:800, 15:850, 40:900]; 20 visited; offload to: 25; 
+Visited 25; available PT: 200; cannot process; FL: 2; neigh PQ: [30:650]; 30 visited; all neighbors visited; Served by cloud;]
+
+RECEIVED: Packet [id=localhost:8000, T=1, PT=600, FL=4, 
+seq#: 85, path=[30, 20, 40, 35, 15], details=
+Visited 30; available PT: 500; cannot process; FL: 0; neigh PQ: [20:-100, 15:50, 25:450, 40:250]; offload to: 20; 
+Visited 20; available PT: 150; cannot process; FL: 1; neigh PQ: [40:250, 30:500]; offload to: 40; 
+Visited 40; available PT: 750; cannot process; FL: 2; neigh PQ: [20:-100, 35:950, 30:500]; 20 30 visited; offload to: 35; 
+Visited 35; available PT: 50; cannot process; FL: 3; neigh PQ: [15:50, 40:250]; offload to: 15; 
+Visited 15; available PT: 950; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=8, PT=950, FL=4, 
+seq#: 72, path=[25, 30, 20], details=
+Visited 25; available PT: 0; cannot process; FL: 0; neigh PQ: [30:700]; offload to: 30; 
+Visited 30; available PT: 300; cannot process; FL: 1; neigh PQ: [20:-300, 40:0, 25:1000, 15:1000]; offload to: 20; 
+Visited 20; available PT: 1300; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=3, PT=800, FL=4, 
+seq#: 80, path=[15, 35], details=
+Visited 15; available PT: 0; cannot process; FL: 0; neigh PQ: [35:250, 30:750]; offload to: 35; 
+Visited 35; available PT: 850; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=2, PT=700, FL=4, 
+seq#: 86, path=[15, 30, 40], details=
+Visited 15; available PT: 350; cannot process; FL: 0; neigh PQ: [30:500, 35:950]; offload to: 30; 
+Visited 30; available PT: 500; cannot process; FL: 1; neigh PQ: [15:50, 40:250, 20:850, 25:450]; 15 visited; offload to: 40; 
+Visited 40; available PT: 1550; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=6, PT=750, FL=4, 
+seq#: 76, path=[35, 40, 30, 20], details=
+Visited 35; available PT: 100; cannot process; FL: 0; neigh PQ: [40:750, 15:1000]; offload to: 40; 
+Visited 40; available PT: 250; cannot process; FL: 1; neigh PQ: [30:250, 35:900, 20:650]; offload to: 30; 
+Visited 30; available PT: 150; cannot process; FL: 2; neigh PQ: [20:650, 40:750, 25:1000, 15:1000]; offload to: 20; 
+Visited 20; available PT: 350; cannot process; FL: 3; neigh PQ: [30:250, 40:750]; 30 40 visited; all neighbors visited; Served by cloud;]
+
+RECEIVED: Packet [id=localhost:8000, T=2, PT=700, FL=4, 
+seq#: 60, path=[25], details=
+Visited 25; available PT: 950; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=9, PT=100, FL=4, 
+seq#: 89, path=[40], details=
+Visited 40; available PT: 850; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=5, PT=650, FL=4, 
+seq#: 81, path=[20, 30], details=
+Visited 20; available PT: 350; cannot process; FL: 0; neigh PQ: [30:-150, 40:150]; offload to: 30; 
+Visited 30; available PT: 1150; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=2, PT=700, FL=4, 
+seq#: 64, path=[35, 15, 30, 25], details=
+Visited 35; available PT: 450; cannot process; FL: 0; neigh PQ: [15:850, 40:900]; offload to: 15; 
+Visited 15; available PT: 150; cannot process; FL: 1; neigh PQ: [35:550, 30:700]; 35 visited; offload to: 30; 
+Visited 30; available PT: 300; cannot process; FL: 2; neigh PQ: [25:550, 20:700, 40:900, 15:850]; offload to: 25; 
+Visited 25; available PT: 550; cannot process; FL: 3; neigh PQ: [30:700]; 30 visited; all neighbors visited; Served by cloud;]
+
+RECEIVED: Packet [id=localhost:8000, T=9, PT=100, FL=4, 
+seq#: 91, path=[30], details=
+Visited 30; available PT: 1200; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=8, PT=950, FL=4, 
+seq#: 98, path=[15], details=
+Visited 15; available PT: 1100; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=1, PT=600, FL=4, 
+seq#: 66, path=[25], details=
+Visited 25; available PT: 1450; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=3, PT=800, FL=4, 
+seq#: 95, path=[40, 35], details=
+Visited 40; available PT: 0; cannot process; FL: 0; neigh PQ: [35:50, 20:800, 30:450]; offload to: 35; 
+Visited 35; available PT: 950; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=5, PT=650, FL=4, 
+seq#: 79, path=[30, 25], details=
+Visited 30; available PT: 250; cannot process; FL: 0; neigh PQ: [25:450, 20:650, 40:750, 15:1000]; offload to: 25; 
+Visited 25; available PT: 550; cannot process; FL: 1; neigh PQ: [30:750]; 30 visited; all neighbors visited; Served by cloud;]
+
+RECEIVED: Packet [id=localhost:8000, T=8, PT=950, FL=4, 
+seq#: 84, path=[25, 30, 20], details=
+Visited 25; available PT: 550; cannot process; FL: 0; neigh PQ: [30:500]; offload to: 30; 
+Visited 30; available PT: 500; cannot process; FL: 1; neigh PQ: [20:-100, 40:250, 15:1000, 25:450]; offload to: 20; 
+Visited 20; available PT: 1100; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=6, PT=750, FL=4, 
+seq#: 93, path=[20, 30, 40], details=
+Visited 20; available PT: 200; cannot process; FL: 0; neigh PQ: [30:-100, 40:250]; offload to: 30; 
+Visited 30; available PT: 350; cannot process; FL: 1; neigh PQ: [40:250, 25:450, 15:650, 20:800]; offload to: 40; 
+Visited 40; available PT: 750; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=6, PT=750, FL=4, 
+seq#: 92, path=[15, 30], details=
+Visited 15; available PT: 350; cannot process; FL: 0; neigh PQ: [30:-100, 35:950]; offload to: 30; 
+Visited 30; available PT: 1100; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=9, PT=100, FL=4, 
+seq#: 94, path=[35, 40, 30], details=
+Visited 35; available PT: 50; cannot process; FL: 0; neigh PQ: [40:250, 15:650]; offload to: 40; 
+Visited 40; available PT: 0; cannot process; FL: 1; neigh PQ: [30:450, 35:950, 20:800]; offload to: 30; 
+Visited 30; available PT: 550; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=7, PT=850, FL=4, 
+seq#: 67, path=[30, 25], details=
+Visited 30; available PT: 300; cannot process; FL: 0; neigh PQ: [25:150, 20:700, 15:1000, 40:900]; offload to: 25; 
+Visited 25; available PT: 850; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=7, PT=850, FL=4, 
+seq#: 87, path=[20], details=
+Visited 20; available PT: 1050; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=1, PT=900, FL=4, 
+seq#: 83, path=[40, 30, 25], details=
+Visited 40; available PT: 750; cannot process; FL: 0; neigh PQ: [30:500, 35:950, 20:650]; offload to: 30; 
+Visited 30; available PT: 500; cannot process; FL: 1; neigh PQ: [40:150, 25:450, 20:650, 15:1000]; 40 visited; offload to: 25; 
+Visited 25; available PT: 550; cannot process; FL: 2; neigh PQ: [30:500]; 30 visited; all neighbors visited; Served by cloud;]
+
+RECEIVED: Packet [id=localhost:8000, T=3, PT=800, FL=4, 
+seq#: 78, path=[25], details=
+Visited 25; available PT: 1350; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=5, PT=650, FL=4, 
+seq#: 99, path=[20], details=
+Visited 20; available PT: 900; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=8, PT=950, FL=4, 
+seq#: 88, path=[35, 40, 30, 25], details=
+Visited 35; available PT: 50; cannot process; FL: 0; neigh PQ: [40:150, 15:650]; offload to: 40; 
+Visited 40; available PT: 850; cannot process; FL: 1; neigh PQ: [30:500, 35:950, 20:800]; offload to: 30; 
+Visited 30; available PT: 500; cannot process; FL: 2; neigh PQ: [40:150, 25:450, 15:650, 20:800]; 40 visited; offload to: 25; 
+Visited 25; available PT: 550; cannot process; FL: 3; neigh PQ: [30:500]; 30 visited; all neighbors visited; Served by cloud;]
+
+RECEIVED: Packet [id=localhost:8000, T=1, PT=600, FL=4, 
+seq#: 90, path=[25], details=
+Visited 25; available PT: 1150; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=9, PT=100, FL=4, 
+seq#: 96, path=[25], details=
+Visited 25; available PT: 1300; can process; Served by fog;]
+
+RECEIVED: Packet [id=localhost:8000, T=7, PT=850, FL=4, 
+seq#: 97, path=[30, 25], details=
+Visited 30; available PT: 450; cannot process; FL: 0; neigh PQ: [25:-300, 20:100, 15:650, 40:1000]; offload to: 25; 
+Visited 25; available PT: 1200; can process; Served by fog;]
