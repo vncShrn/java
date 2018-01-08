@@ -1,0 +1,76 @@
+I am cohort. My process id: 3 hostName: vincy
+<pid,neighbors> map: {1=1 vincy:8001}
+Process 3 Send HELLO to => 1
+ Process 3: Waiting for incoming connections at: 8003
+*
+*
+*
+Process 3: T=1 : COHORT received COMMIT_REQ from <= 1[id=1, val=10, isCoord=false, replyAbort=false, failAtState=null]
+Process 3: T=1 : Send AGREED to => 1
+Process 3: Received PREPARE from <= 1
+Process 3: Send ACK to => 1
+Process 3: Received COMMIT from <= 1
+Transaction 1 completed with state: COMMIT
+*
+*
+*
+*
+*
+*
+Process 3: T=2 : COHORT received COMMIT_REQ from <= 1[id=2, val=20, isCoord=false, replyAbort=true, failAtState=null]
+Process 3: T=2 : Send AGREED to => 1
+Process 3: Received ABORT from <= 1
+Transaction 2 completed with state: ABORT
+*
+*
+*
+*
+*
+*
+Process 3: T=3 : COHORT received COMMIT_REQ from <= 1[id=3, val=30, isCoord=true, replyAbort=false, failAtState=PREPARE]
+Process 3: T=3 : Send AGREED to => 1
+Process 3: Cohort timed out at state: WAIT
+Transaction 3 completed with state: ABORT
+*
+*
+*
+Process 3: Completed handling: vincy : 50433
+*
+*
+*
+Process 3: T=4 : COHORT received COMMIT_REQ from <= 1[id=4, val=40, isCoord=true, replyAbort=false, failAtState=COMMIT]
+Process 3: T=4 : Send AGREED to => 1
+Process 3: Received PREPARE from <= 1
+Process 3: Send ACK to => 1
+Process 3: Cohort timed out at state p, waiting for COMMIT msg from COORD
+Transaction 4 completed with state: COMMIT
+*
+*
+*
+Process 3: Completed handling: vincy : 50436
+*
+*
+*
+Process 3: T=5 : COHORT received COMMIT_REQ from <= 1[id=5, val=50, isCoord=false, replyAbort=false, failAtState=PREPARE]
+Process 3: T=5 : Send AGREED to => 1
+Process 3: Received PREPARE from <= 1
+Process 3: Send ACK to => 1
+Process 3: Received ABORT from <= 1
+Transaction 5 completed with state: ABORT
+*
+*
+*
+*
+*
+*
+Process 3: T=6 : COHORT received COMMIT_REQ from <= 1[id=6, val=60, isCoord=false, replyAbort=false, failAtState=null]
+Process 3: T=6 : Send AGREED to => 1
+Process 3: Received PREPARE from <= 1
+Process 3: Send ACK to => 1
+Process 3: Received COMMIT from <= 1
+Transaction 6 completed with state: COMMIT
+*
+*
+*
+Process 3: Received TERMINATE from <= 1
+Going to die...

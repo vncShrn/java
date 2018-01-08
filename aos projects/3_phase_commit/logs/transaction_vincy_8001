@@ -1,0 +1,6 @@
+T= 1 value= 10 status= COMMIT date= 04:55:32.143
+T= 2 value= 20 status= ABORT date= 04:55:36.738
+T= 3 value= 30 status= ABORT date= 04:55:56.512 onRecovery
+T= 4 value= 40 status= COMMIT date= 04:56:16.949 onRecovery
+T= 5 value= 50 status= ABORT date= 04:56:25.404
+T= 6 value= 60 status= COMMIT date= 04:56:51.248

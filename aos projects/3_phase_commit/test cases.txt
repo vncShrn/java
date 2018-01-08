@@ -1,0 +1,36 @@
+1. No failures: 1 <val> 
+2. cohort disagrees: 2 <cohort_id> <val>
+3. coord fails: 3 <q,w,p,c> <val>
+4. cohort fails: 4 <cohort_id> <q,w,p,c> <val>
+5. quit
+
+no failures
+1 10
+
+cohort disagrees to COMMIT_REQ
+2 2 20
+
+coord fails before sending PREPARE
+coord aborts upon recovery
+cohorts on prepare message timeout, also aborts the transaction.
+3 p 30
+
+coord fails before sending COMMIT
+coord commits upon recovery
+cohorts on commit message timeout, also commit to the transaction.
+3 c 40
+
+cohort fails before sending ACK
+cohort aborts upon recovery
+coord on ack message timeout, sends ABORT message to all others
+4 2 p 50
+
+cohort fails before sending AGREE/ABORT (its in state q)
+cohort aborts upon recovery
+coord on AGREE message timeout, sends ABORT message to all others
+4 3 q 60
+
+no failures
+1 70
+
+

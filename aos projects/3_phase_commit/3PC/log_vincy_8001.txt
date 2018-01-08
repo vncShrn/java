@@ -1,0 +1,175 @@
+Process vincy: I AM THE COORDINATOR
+<pid,neighbors> map: {2=2 vincy:8002, 3=3 vincy:8003}
+ Process 1: Waiting for incoming connections at: 8001
+Process 1: Received HELLO <= from 2
+Process 1: Received HELLO <= from 3
+Process 1: All processes are ready to begin computation
+Process 1: I am COORDINATOR... I am waiting for COMMIT_REQ transaction
+Process 1: Enter next transaction details in format
+1. No failures: 1 <val> 
+2. cohort disagrees: 2 <cohort_id> <val>
+3. coord fails: 3 <q,w,p,c> <val>
+4. cohort fails: 4 <cohort_id> <q,w,p,c> <val>
+5. quit
+1 10
+Process 1: T= 1 No failures
+Process 1: Send COMMIT_REQ to => 1
+Process 1: T=1 : COORD received COMMIT_REQ: [id=1, val=10, isCoord=false, replyAbort=false, failAtState=null]
+Process 1: T=1 : Send COMMIT_REQ to 2
+Process 1: T=1 : AGREED received from <= 2
+Process 1: T=1 : Send COMMIT_REQ to 3
+Process 1: T=1 : AGREED received from <= 3
+Process 1: T=1 : Send PREPARE to 2
+Process 1: T=1 : ACK received from <= 2
+Process 1: T=1 : Send PREPARE to 3
+Process 1: T=1 : ACK received from <= 3
+Process 1: T=1 : ACK received for all PREPARE, Transaction has to be commited
+Process 1: T=1 : Send COMMIT to 2
+Process 1: T=1 : Send COMMIT to 3
+Transaction 1 completed with state: COMMIT
+*
+*
+*
+Process 1: Enter next transaction details in format
+1. No failures: 1 <val> 
+2. cohort disagrees: 2 <cohort_id> <val>
+3. coord fails: 3 <q,w,p,c> <val>
+4. cohort fails: 4 <cohort_id> <q,w,p,c> <val>
+5. quit
+2 2 20
+Process 1: T= 2 Cohort disagrees
+Process 1: Send COMMIT_REQ to => 1
+Process 1: T=2 : COORD received COMMIT_REQ: [id=2, val=20, isCoord=false, replyAbort=true, failAtState=null]
+Process 1: T=2 : Send COMMIT_REQ to 2
+Process 1: T=2 : ABORT received from <= 2
+Process 1: T=2 : Send COMMIT_REQ to 3
+Process 1: T=2 : AGREED received from <= 3
+Process 1: T=2 : Transaction aborted, as someone did not agree to COMMIT_REQ
+Process 1: T=2 : Send ABORT to 2
+Process 1: T=2 : Send ABORT to 3
+Transaction 2 completed with state: ABORT
+*
+*
+*
+Process 1: Enter next transaction details in format
+1. No failures: 1 <val> 
+2. cohort disagrees: 2 <cohort_id> <val>
+3. coord fails: 3 <q,w,p,c> <val>
+4. cohort fails: 4 <cohort_id> <q,w,p,c> <val>
+5. quit
+3 p 30
+Process 1: T= 3 Coord fails
+Process 1: Send COMMIT_REQ to => 1
+Process 1: T=3 : COORD received COMMIT_REQ: [id=3, val=30, isCoord=true, replyAbort=false, failAtState=PREPARE]
+Process 1: T=3 : Send COMMIT_REQ to 2
+Process 1: T=3 : ABORT received from <= 2
+Process 1: T=3 : Send COMMIT_REQ to 3
+Process 1: T=3 : AGREED received from <= 3
+Process 1: T=3 : Failing at state: PREPARE
+Process 1: T=3 : failed_vincy_8001 File is created!
+Process 1: T=3 : COORD fails before sending PREPARE, cohorts should timeout waiting for PREPARE and ABORT
+Process 1: T=3 : COORD on recovery ABORTS transaction
+Going to die...
+Process vincy: I AM THE COORDINATOR
+<pid,neighbors> map: {2=2 vincy:8002, 3=3 vincy:8003}
+vincy Previously failed T= 3 at state= PREPARE
+Transaction 3 completed with state: ABORT
+*
+*
+*
+File deleted failed_vincy_8001
+ Process 1: Waiting for incoming connections at: 8001
+Process 1: Enter next transaction details in format
+1. No failures: 1 <val> 
+2. cohort disagrees: 2 <cohort_id> <val>
+3. coord fails: 3 <q,w,p,c> <val>
+4. cohort fails: 4 <cohort_id> <q,w,p,c> <val>
+5. quit
+3 c 40
+Process 1: T= 4 Coord fails
+Process 1: Send COMMIT_REQ to => 1
+Process 1: T=4 : COORD received COMMIT_REQ: [id=4, val=40, isCoord=true, replyAbort=false, failAtState=COMMIT]
+Process 1: T=4 : Send COMMIT_REQ to 2
+Process 1: T=4 : AGREED received from <= 2
+Process 1: T=4 : Send COMMIT_REQ to 3
+Process 1: T=4 : AGREED received from <= 3
+Process 1: T=4 : Send PREPARE to 2
+Process 1: T=4 : ACK received from <= 2
+Process 1: T=4 : Send PREPARE to 3
+Process 1: T=4 : ACK received from <= 3
+Process 1: T=4 : ACK received for all PREPARE, Transaction has to be commited
+Process 1: T=4 : COORD fails before sending COMMIT, cohorts should timeout, go ahead and COMMIT
+Process 1: T=4 : Failing at state: COMMIT
+Process 1: T=4 : failed_vincy_8001 File is created!
+Going to die...
+
+Process vincy: I AM THE COORDINATOR
+<pid,neighbors> map: {2=2 vincy:8002, 3=3 vincy:8003}
+vincy Previously failed T= 4 at state= COMMIT
+Transaction 4 completed with state: COMMIT
+*
+*
+*
+File deleted failed_vincy_8001
+ Process 1: Waiting for incoming connections at: 8001
+Process 1: Enter next transaction details in format
+1. No failures: 1 <val> 
+2. cohort disagrees: 2 <cohort_id> <val>
+3. coord fails: 3 <q,w,p,c> <val>
+4. cohort fails: 4 <cohort_id> <q,w,p,c> <val>
+5. quit
+4 2 p 50
+Process 1: T= 5 Cohort fails
+Process 1: Send COMMIT_REQ to => 1
+Process 1: T=5 : COORD received COMMIT_REQ: [id=5, val=50, isCoord=false, replyAbort=false, failAtState=PREPARE]
+Process 1: T=5 : Send COMMIT_REQ to 2
+Process 1: T=5 : AGREED received from <= 2
+Process 1: T=5 : Send COMMIT_REQ to 3
+Process 1: T=5 : AGREED received from <= 3
+Process 1: T=5 : Send PREPARE to 2
+Process 1: T=5 : Error: Send msg => 2: vincy:8002 Connection reset
+Process 1: T=5 : Send PREPARE to 3
+Process 1: T=5 : ACK received from <= 3
+Process 1: T=5 : Transaction aborted, as someone timed out to reply ACK to PREPARE
+Connection refused: connect
+Process 1: T=5 : Send ABORT to 3
+Transaction 5 completed with state: ABORT
+*
+*
+*
+Process 1: Enter next transaction details in format
+1. No failures: 1 <val> 
+2. cohort disagrees: 2 <cohort_id> <val>
+3. coord fails: 3 <q,w,p,c> <val>
+4. cohort fails: 4 <cohort_id> <q,w,p,c> <val>
+5. quit
+Process 1: Received HELLO <= from 2
+1 60
+Process 1: T= 6 No failures
+Process 1: Send COMMIT_REQ to => 1
+Process 1: T=6 : COORD received COMMIT_REQ: [id=6, val=60, isCoord=false, replyAbort=false, failAtState=null]
+Process 1: T=6 : Send COMMIT_REQ to 2
+Process 1: T=6 : AGREED received from <= 2
+Process 1: T=6 : Send COMMIT_REQ to 3
+Process 1: T=6 : AGREED received from <= 3
+Process 1: T=6 : Send PREPARE to 2
+Process 1: T=6 : ACK received from <= 2
+Process 1: T=6 : Send PREPARE to 3
+Process 1: T=6 : ACK received from <= 3
+Process 1: T=6 : ACK received for all PREPARE, Transaction has to be commited
+Process 1: T=6 : Send COMMIT to 2
+Process 1: T=6 : Send COMMIT to 3
+Transaction 6 completed with state: COMMIT
+*
+*
+*
+Process 1: Enter next transaction details in format
+1. No failures: 1 <val> 
+2. cohort disagrees: 2 <cohort_id> <val>
+3. coord fails: 3 <q,w,p,c> <val>
+4. cohort fails: 4 <cohort_id> <q,w,p,c> <val>
+5. quit
+5
+Process 1: Completed all COMMIT requests. Going to TERMINATE...
+Process 1: Send TERMINATE to 2
+Process 1: Send TERMINATE to 3
